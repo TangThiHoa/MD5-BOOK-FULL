@@ -1,0 +1,17 @@
+<!--<link rel="stylesheet" href="../assets/vendor/fontawesome-free/css/all.min.css">-->
+<!--<link rel="stylesheet" href="../assets/css/sb-admin-2.min.css">-->
+
+<div class="card shadow mb-4">
+  <!-- Card Body -->
+  <div class="card-body">
+
+    <h5 class="mb-2 font-weight-bold">Danh mục</h5>
+    <div class="row">
+      <div class="col-4 mb-2" *ngFor="let category of categories">
+        <a [routerLink]="['/users/link-docs', category.id]" class="text-primary"><img
+          src="https://media.giphy.com/media/WV9R2niZMMbcE5a9um/giphy.gif" alt="" style="width: 15%">{{category.name}}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

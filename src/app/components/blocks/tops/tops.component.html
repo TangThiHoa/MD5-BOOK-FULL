@@ -1,0 +1,81 @@
+
+
+<div class="card shadow mb-4">
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item ">
+        <a  [routerLink]="['/users/user-info', topPosts.id]">
+        <img src="https://github.com/nhuanh9/imgFEDA/blob/master/certificate-with-ribbon-bow-copy-space.jpeg?raw=true"
+             class="d-block w-100 abc" alt="...">
+        <div class="carousel-caption d-none d-md-block top mid">
+          <h4>HAM HỌC HỎI</h4>
+          <p><i>Người đăng nhiều bài viết nhất</i></p>
+          <div class="imgnew">
+            <img src="{{topPosts.imageUrls}}">
+          </div>
+          <h3 class="line-1 anim-typewriter">{{topPosts.username}}</h3>
+
+        </div>
+        </a>
+      </div>
+      <div class="carousel-item">
+
+        <a  [routerLink]="['/users/user-info', topComments.id]">
+        <img
+          src="https://github.com/nhuanh9/imgFEDA/blob/master/thank-you-note-heart-shape-paper-with-two-cupcake.jpeg?raw=true"
+          class="d-block w-100 abc"  alt="...">
+        <div class="carousel-caption d-none d-md-block top mid">
+          <h4>NGƯỜI TỐT BỤNG</h4>
+          <p><i>Người bình luận nhiều nhất</i></p>
+          <div class="imgnew">
+            <img src="{{topComments.imageUrls}}">
+          </div>
+          <h3 class="line-1 anim-typewriter">{{topComments.username}}</h3>
+
+        </div>
+        </a>
+      </div>
+      <div class="carousel-item active">
+
+        <a  [routerLink]="['/users/user-info', topLinkDocs.id]">
+        <img
+          src="https://github.com/nhuanh9/imgFEDA/blob/master/education-diploma-certificate-copy-space-background.jpeg?raw=true"
+          class="d-block w-100 abc" alt="...">
+        <div class="carousel-caption d-none d-md-block top mid">
+          <h4>TRÙM LƯU TRỮ</h4>
+          <p><i>Người đăng tài liệu nhiều nhất</i></p>
+          <div class="imgnew">
+            <img src="{{topLinkDocs.imageUrls}}">
+          </div>
+          <h3 class="line-1 anim-typewriter">{{topLinkDocs.username}}</h3>
+
+        </div>
+        </a>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<script src="../assets/js/sb-admin-2.min.js"></script>
+
+<script src="../assets/vendor/chart.js/Chart.min.js"></script>
+<script src="../assets/js/demo/chart-area-demo.js"></script>
+<script src="../assets/js/demo/chart-pie-demo.js"></script>
